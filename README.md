@@ -7,6 +7,7 @@ Download
 git clone https://github.com/nuwancng/uptimenuwa.git
 
 cd uptimenuwa
+
 watch sh uptimenuwa
 
 Enjoy!
