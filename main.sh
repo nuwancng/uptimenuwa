@@ -71,3 +71,5 @@ echo "-------------------------------"
 display_usage "$cpu_usage" "$cpu_bar" "CPU"
 
 echo "-------------------------------"
+
+echo  "Press CTRL+C exit from this screen"
