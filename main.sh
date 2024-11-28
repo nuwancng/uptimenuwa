@@ -49,7 +49,7 @@ display_usage() {
     reset="\033[0m"
 
     # Display the usage indicator
-    echo -e "$type Usage: ${color}${usage}% [${bar}]${reset}"
+    echo  "$type Usage: ${color}${usage}% [${bar}]${reset}"
 }
 
 # Get the current RAM and CPU usage
@@ -60,7 +60,14 @@ cpu_usage=$(get_cpu_usage)
 ram_bar=$(generate_bar "$ram_usage")
 cpu_bar=$(generate_bar "$cpu_usage")
 
+echo "-------------------------------"
+
+
 # Display the RAM and CPU usage
 display_usage "$ram_usage" "$ram_bar" "RAM"
+
+echo "-------------------------------"
+
 display_usage "$cpu_usage" "$cpu_bar" "CPU"
 
+echo "-------------------------------"
